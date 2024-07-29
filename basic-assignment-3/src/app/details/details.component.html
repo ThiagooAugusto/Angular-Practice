@@ -1,0 +1,4 @@
+<button class="btn btn-primary" (click)="onDisplay()">Display Details</button>
+<p *ngIf="show" >Secret Password: Potato</p>
+<p *ngFor="let item of logs" [ngClass]="{'white-text': item >= 5}" [ngStyle]="{backgroundColor: getColor(item)}">{{item}}</p>
+
